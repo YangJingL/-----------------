@@ -1,0 +1,766 @@
+﻿@charset utf-8;
+/* CSS Document */
+/***************************************
+*	Version 		15.00.01
+*	Author			wuwg
+*  	CreateTime      15.04.27
+ *	UpdateTime		15.04.27
+* *************************************************/
+ 
+ 
+/**************************************
+*name     		 layout
+*status   		 start
+*CreatTime 		 15.04.27
+**************************************/
+html, body {
+    width:100%;
+    height: 100%;
+}
+.fd-contain {
+    position: relative;
+    width:100%;
+    height: 100%;
+    background:url("../images/bg.png") no-repeat center;
+    overflow:hidden;
+}
+
+.fd-content{
+
+}
+/**************************************
+*name      		layout
+*status   		 end
+*CreatTime 		 15.04.27
+**************************************/
+
+/**************************************
+*name     		theme
+*status    		start
+*CreatTime 		15.04.27
+**************************************/
+
+
+/*--------------------   top  --------------------*/
+.fd-top {
+    width: 100%;
+    height: 40px;
+    font: 14px/40px "microsoft yahei";
+    background: url("../images/top-bg.png") no-repeat center;
+}
+.fd-logo {
+    width: 84px;
+    height: 97px;
+    margin: 36px auto 27px;
+    background: url("../images/logo.png");
+}
+.fd-welcome {
+    padding-left: 25px;
+    background: url("../images/user.png") no-repeat left;
+    color: #ff9900;
+}
+.fd-logout {
+    padding-left: 25px;
+    margin-left: 30px;
+    background: url("../images/logout.png") no-repeat left;
+    color: #fff;
+}
+.fd-logout:hover {
+    text-decoration: none;
+}
+.fd-top-wrapper {
+    float: right;
+    margin-right: 200px;
+}
+/*--------------------  logo  --------------------*/
+.fd-title{
+    width: 100%;
+    text-align: center;
+    font: 36px/normal "microsoft yahei";
+    letter-spacing: 5px;
+    color: #fff;
+}
+/*--------------------  search  --------------------*/
+.fd-layout-search {
+    width: 630px;
+    height: 100px;
+    margin: 39px auto 60px;
+}
+.fd-search-wrapper {
+    width: 100%;
+    height: 60px;
+    background: url("../images/icon-18.png");
+    text-align: center;
+}
+.fd-search {
+    position: relative;
+    display: inline-block;
+    width: 608px;
+    height: 38px;
+    margin: 10px auto;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 2px;
+}
+.fd-select {
+    position: relative;
+    display: inline-block;
+    width: 130px;
+    height: 100%;
+    font: 18px/38px "microsoft yahei";
+    color: #ff6600;
+    text-align: center;
+    border-right: 1px solid #cccccc;
+    background: url("../images/glass.png") no-repeat 7px center;
+    cursor: pointer;
+}
+.fd-select:hover > .fd-data-list-01 {
+    display: block;
+}
+.fd-select-logo {
+    position: absolute;
+    right: 14px;
+    top: 16.5px;
+    width: 10px;
+    height: 5px;
+    background: url("../images/icon-11.png");
+}
+.fd-data-list-01 {
+    position: absolute;
+    top: 38px;
+    left: -6px;
+    background-color: #fff;
+    display: none;
+    border-top: 1px solid #ccc;
+    width: 114px;
+    padding: 9px 11px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    z-index: 10;
+}
+.fd-data-list-01 > li {
+    float: left;
+}
+.fd-data-list-01 a {
+    display: inline-block;
+    padding: 0 8px;
+    font: 14px/30px "microsoft yahei";
+    color: #666;
+}
+.fd-data-list-01 a:hover {
+    background-color: #bde2f6;
+    text-decoration: none;
+}
+.fd-data-list-01 .fd-list-item-01 {
+    float: none;
+    text-align: left;
+}
+.fd-search > input {
+    width: 467px;
+    height: 33px;
+    border: 0;
+}
+.fd-search-btn {
+    position: absolute;
+    right: -1px;
+    top: -2px;
+    display: inline-block;
+    width: 98px;
+    height: 40px;
+    border: 1px solid #cb815c;
+    border-radius: 5px;
+    background: url("../images/search-btn.png") repeat-x;
+    font: 18px/40px "microsoft yahei";
+    color: #fff;
+    text-align: center;
+}
+.fd-search-btn:hover {
+    text-decoration: none;
+}
+.fd-layout-search >a {
+    display: inline-block;
+    width: 160px;
+    height: 40px;
+    margin-left: 11px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.4);
+    font: 18px/40px "microsoft yahei";
+    color: #333;
+    text-align: center;
+}
+.fd-type-01 {
+    background: url("../images/icon-15.png");
+}
+.fd-type-01 > span {
+    display: inline-block;
+    padding-left: 28px;
+    background: url("../images/cup.png") no-repeat left center;
+}
+.fd-type-02 {
+    background: url("../images/icon-16.png");
+}
+.fd-type-02 > span {
+    display: inline-block;
+    padding-left: 28px;
+    background: url("../images/icon-search.png") no-repeat left center;
+}
+.fd-type-03 {
+    background: url("../images/icon-17.png");
+}
+.fd-type-03 > span {
+    display: inline-block;
+    padding-left: 28px;
+    background: url("../images/service.png") no-repeat left center;
+}
+/*----------------  content    ---------------- */
+.fd-content {
+    width: 1000px;
+    margin: 0 auto;
+}
+.fd-content-layout {
+    width: 480px;
+}
+.fd-item-01 {
+    float: left;
+}
+.fd-item-02 {
+    float: right;
+}
+.fd-nav {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: url("../images/nav-bg.png") repeat-x;
+}
+.fd-nav-title {
+    margin-left: 15px;
+    padding-left: 36px;
+    font: 18px/40px "microsoft yahei";
+    color: #333;
+}
+.fd-title-01 {
+    background: url("../images/title-01.png") no-repeat left center;
+}
+.fd-title-02 {
+    background: url("../images/title-02.png") no-repeat left center;
+}
+.fd-setting {
+    display: inline-table;
+    float: right;
+    width: 75px;
+    height: 28px;
+    padding-right: 9px;
+    margin-top: 6.5px;
+    border-radius: 3px;
+    text-align: right;
+}
+.fd-setting-01 {
+    margin-right: 4px;
+    background: url("../images/set-bg.png") repeat-x ;
+    border: 1px solid #669dcc;
+}
+.fd-setting > a {
+    display: inline-block;
+    width: 100%;
+    background: url("../images/book-logo.png") no-repeat 4px center;
+    color: #333;
+    font: 12px/28px "microsoft yahei";
+}
+.fd-setting-02 {
+    margin-right: 90px;
+    background: url("../images/set-02.png") repeat-x ;
+    border: 1px solid #aa834b;
+}
+.fd-setting >a:hover {
+    text-decoration: none;
+}
+.fd-save {
+    position: absolute;
+    display: none;
+    right: 52px;
+    font: 12px/40px "microsoft yahei";
+    color: #009900;
+}
+.fd-cancle {
+    position: absolute;
+    display: none;
+    right: 14px;
+    font: 12px/40px "microsoft yahei";
+    color: #cc3333;
+}
+/*个性化设置 start*/
+.fd-set-content-01 {
+    position: relative;
+    display: none;
+    float: left;
+    height: 178px;
+    width: 228px;
+    margin-left: 8px;
+    margin-top: 9px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.fd-set-content-02 {
+    float: right;
+    display: none;
+    width: 218px;
+    height: 178px;
+    margin-right: 8px;
+    margin-top: 9px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+.fd-scoll-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+.fd-scroll-track{
+    position:absolute;
+    top:1%;
+    right:6px;
+    z-index:8;
+    width:6px;
+    height:98%;
+    background-color:#ffe083;
+}
+.fd-scroll-bar{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:2;
+    width:100%;
+    height:80px;
+    border-radius:10px;
+    cursor:default;
+    background-color:#ff9c00;
+}
+.fd-scroll-bar:hover,
+.fd-scroll-bar.pressed {
+    background-color:#ff9c00;
+}
+.fd-scroll-content {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:2;
+    width:100%;
+}
+.fd-item {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.fd-item > h5 {
+    display: inline-block;
+    padding-right: 10px;
+    background: url("../images/icon-19.png") no-repeat right center;
+    font: 14px/28px "microsoft yahei";
+    color: #ff6600;
+    cursor: pointer;
+}
+.fd-item-content {
+    font: 14px/24px "microsoft yahei";
+    color: #101010;
+}
+.fd-add-btn {
+    width: 14px;
+    height: 14px;
+    padding-right: 20px;
+    background: url("../images/add-btn.png") no-repeat left center;
+}
+.fd-add-btn:hover {
+    background: url("../images/add-btn-02.png") no-repeat left center;
+}
+.fd-finish-add {
+    width: 14px;
+    height: 14px;
+    padding-right: 20px;
+    background: url("../images/add-btn-03.png") no-repeat left center;
+}
+.fd-set-content-02 > nav {
+    width: 100%;
+    height: 36px;
+    background-color: #cde6ff;
+    font: 14px/36px "microsoft yahei";
+}
+.fd-lable-title {
+    display: inline-block;
+    float: left;
+    margin-left: 12px;
+}
+.fd-edit-btn {
+    display: inline-block;
+    float: right;
+    margin-right: 14px;
+}
+.fd-lable-list {
+    margin: 10px  10px ;
+}
+.fd-delete {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url("../images/delete-01.png");
+}
+.fd-delete:hover {
+    background: url("../images/delete-02.png");
+}
+.fd-lable-list span{
+    margin-left: 10px;
+}
+.fd-lable-list > li {
+    font: 14px/24px "microsoft yahei";
+}
+/*个性化设置 end*/
+
+.fd-nav-content {
+    position: relative;
+    width: 478px;
+    height: 198px;
+    background: url("../images/content-bg.png") repeat;
+    border: 1px solid #cde6ff;
+    border-radius: 2px;
+}
+.fd-nav-content > a {
+    position: absolute;
+    display: block;
+    left: -60px;
+    width: 59px;
+    height: 40px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    font: 14px/40px "microsoft yahei";
+    text-align: center;
+}
+.fd-nav-content > a:hover {
+    text-decoration: none;
+}
+.fd-lable-01 {
+    top: 0;
+    border-left: 1px solid #cde6ff;
+    background-color: #cde6ff;
+}
+.fd-lable-02 {
+    top: 50px;
+    border-left: 1px solid #ccffcc;
+    background-color: #ccffcc;
+}
+.fd-lable-03 {
+    top: 100px;
+    border-left: 1px solid #fff0aa;
+    background-color: #fff0aa;
+}
+.fd-data-area {
+    display: block;
+    padding: 0 20px;
+    overflow: hidden;
+}
+.fd-data-area > li {
+    float: left;
+    width: 118px;
+    height: 78px;
+    margin: 9px 13px;
+    background: url("../images/icon-01.png") repeat-x;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.2);
+    border: 1px solid #8bb8d1;
+}
+.fd-data-item {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.fd-data-item > span {
+    position: absolute;
+    bottom: 7px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font: 14px/normal "microsoft yahei";
+    color: #fff;
+}
+.fd-data-area > li:hover,
+.fd-data-area .selected {
+    background: url("../images/item-bg.png") repeat-x;
+    border: 1px solid #66ccff;
+}
+.fd-a-01 {
+    background: url("../images/icon-02.png") no-repeat center 9px;
+}
+.fd-a-02 {
+    background: url("../images/icon-03.png") no-repeat center 9px;
+}
+.fd-a-03 {
+    background: url("../images/icon-04.png") no-repeat center 9px;
+}
+.fd-a-04 {
+    background: url("../images/icon-10.png") no-repeat center 9px;
+}
+.fd-a-05 {
+    background: url("../images/icon-05.png") no-repeat center 9px;
+}
+.fd-a-06 {
+    background: url("../images/icon-06.png") no-repeat center 9px;
+}
+.fd-a-07 {
+    background: url("../images/icon-07.png") no-repeat center 9px;
+}
+.fd-a-08 {
+    background: url("../images/icon-08.png") no-repeat center 9px;
+}
+.fd-a-09 {
+    background: url("../images/icon-09.png") no-repeat center 9px;
+}
+.fd-data-list {
+    padding: 11px 27px 15px 11px;
+}
+.fd-data-list a {
+    padding-left: 39px;
+    font: 14px/36px "microsoft yahei";
+    color: #fff;
+    background: url("../images/icon-new.png") no-repeat left center;
+}
+.fd-new-data >li {
+    position: relative;
+}
+.fd-new-logo {
+    position: absolute;
+    display: inline-block;
+    width: 24px;
+    height: 17px;
+    top: 6px;
+    left: -5px;
+    background: url("../images/new.png");
+}
+/*------------   搜索风云榜弹出层 ------------*/
+.fd-layer-01 {
+    position: absolute;
+    display: none;
+    width: 631px;
+    height: 420px;
+    left: 50%;
+    margin:0 -315px;
+    bottom: 100px;
+    background-color: #fff;
+    z-index: 10;
+}
+.fd-layer-tile-01 {
+    border: 1px solid #ffe4ad;
+    background-color: #ffe4ad;
+}
+.fd-layer-tile {
+    float: left;
+    display: inline-block;
+    margin-left: 12px;
+    padding-left: 30px;
+    font: 18px/38px "microsoft yahei";
+    color: #333;
+    text-align: right;
+}
+.fd-title-03 {
+    background: url("../images/title-03.png") no-repeat left center;
+}
+.fd-rank-01 {
+    position: relative;
+    float: left;
+}
+.fd-rank-week {
+    border-right: 1px solid #e4e4e4 ;
+}
+.fd-rank-title {
+    position: absolute;
+    top: 24px;
+    left: 65px;
+    font: 14px/30px "microsoft yahei";
+    color: #333;
+}
+.fd-rank-02 {
+    position: relative;
+    float: right;
+}
+.fd-rank-ul {
+    padding: 72px 40px 18px;
+    font: 14px/30px "microsoft yahei";
+}
+.fd-num {
+    display: inline-block;
+    width: 25px;
+    color: #666;
+}
+.fd-name {
+    display: inline-block;
+    width: 174px;
+    color: #666;
+}
+.fd-rate {
+    display: inline-block;
+    width: 32px;
+    text-align: center;
+    color: #ccc;
+}
+.fd-top-3 > span {
+    color: #ff6600;
+}
+
+.fd-close {
+    float: right;
+    display: inline-block;
+    margin-right: 12px;
+    width: 18px;
+    height: 40px;
+    cursor: pointer;
+}
+.fd-close-01 {
+    background: url("../images/close.png") no-repeat center;
+}
+/*--------   高级搜索弹出层 -------- */
+.fd-layer-02 {
+    position: absolute;
+    display: none;
+    width: 630px;
+    height: 422px;
+    left: 50%;
+    margin:0 -315px;
+    bottom: 100px;
+    background-color: #fff;
+    z-index: 10;
+}
+.fd-layer-tile-02 {
+    border: 1px solid #c8fafa;
+    background-color: #c8fafa;
+}
+.fd-title-04 {
+    background: url("../images/title-04.png") no-repeat left center;
+}
+.fd-close-02 {
+    background: url("../images/close-02.png") no-repeat center;
+}
+.fd-input-list {
+    padding: 23px;
+    font: 14px/36px "microsoft yahei";
+    color: #101010;
+}
+.fd-input {
+    height: 26px;
+    width: 438px;
+    border: 1px solid #ccc;
+}
+.fd-input-list label {
+    display: inline-block;
+    width: 140px;
+    text-align: right;
+}
+.fd-input-date {
+    width: 198px;
+    height: 26px;
+    border: 1px solid #ccc;
+}
+.fd-to {
+    padding: 0 13px;
+}
+.fd-btns {
+    margin-top: 12px;
+}
+.fd-btn {
+    display: inline-block;
+    width: 98px;
+    height: 28px;
+    font: 14px/28px "microsoft yahei";
+    text-align: center;
+    border-radius: 4px;
+    color: #fff;
+}
+.fd-btn:hover {
+    text-decoration: none;
+}
+.fd-submit {
+    border: 1px solid #2f70b1;
+    background-color: #2f70b1;
+}
+.fd-reset {
+    margin-left: 20px;
+    border: 1px solid #bababa;
+    background-color: #bababa;
+}
+/*-----  服务目录 -----*/
+.fd-layer-03 {
+    position: absolute;
+    display: none;
+    top: 276px;
+    left: 50%;
+    margin-left: -506px;
+    width: 1012px;
+    height: 312px;/*待删*/
+    z-index: 10;
+
+}
+.fd-layer-tile-03 {
+    width: 1010px;
+    border: 1px solid #cceaff;
+    background-color: #cceaff;
+}
+.fd-title-05 {
+    background: url("../images/service.png") no-repeat left;
+}
+.fd-close-03 {
+    background: url("../images/close-03.png") no-repeat center;
+}
+.fd-layer-content {
+    width: 1010px;
+    border: 1px solid #fff;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.fd-layer-content > div {
+    float: left;
+    width: 167.33px;
+    height: 274px;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    text-align: center;
+    border-right: 1px solid #e4e4e4;
+}
+.fd-layer-content h4 {
+    display: inline-block;
+    width: 148px;
+    height: 30px;
+    border: 1px solid #cceaff;
+    background: #cceaff;
+    font: 14px/30px "microsoft yahei";
+}
+.fd-layer-content ul {
+    padding-top: 26px;
+}
+.fd-layer-content li {
+    font: 14px/36px "microsoft yahei";
+    color: #101010;
+}
+
+/*----  遮罩层 ----*/
+.fd-shade {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color:#000;
+    filter:alpha(opacity=50);
+    background-color: rgba(0,0,0,0.4);
+    z-index: 9;
+}
+/*6 */
+
+
+/**************************************
+*name     		 theme
+*status    		 end
+*CreatTime 		 15.04.27
+**************************************/
+
+
